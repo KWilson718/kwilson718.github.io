@@ -5,7 +5,7 @@
         <p>At around the end of 5th Grade I started getting interested in programming, and knew I wanted to make a career out of it by the end of Middle School</p>
         <p>I have participated in multiple smaller projects, and am now working on building out a portfolio to document what I have learned</p>
         <h2>What Have I Done</h2>
-        <p>More specific information can be found in the Experience & Projects pages, but I have been able to participate in multiple smaller projects, am working an internship currently, and am gearing up to a Senior Year of tons of developmental experience</p>
+        <p>More specific information will eventually be in the Experience & Projects pages, but I have been able to participate in multiple smaller projects, have worked a summer internship with a Web Development Focus, and am starting a Senior Year which should have tons of developmental experience!</p>
         <h2>Goals for the Future</h2>
         <p>All of that being said, I hope to move into a Software Engineering job to start out a hopefully long term career.</p>
         <p>Currently, to gain further experience, I am planning on dabbling in the relating fields</p>
