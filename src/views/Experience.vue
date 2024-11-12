@@ -1,11 +1,11 @@
 <template>
     <div class="experience">
         <h1>Experience</h1>
-        <section class="portfolio-section">
+        <section class="experience-section">
             <div v-for="(item, index) in items" :key="index" class="card-item">
-                <h3>{{ item.title }}</h3>
-                <p v-if(item.timeperiod)>{{ item.timeperiod }}</p>
-                <p>{{ item.description }}</p>
+                <h3 v-if="item.title">{{ item.title }}</h3>
+                <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
+                <p v-if="item.description">{{ item.description }}</p>
                 
                 <!-- Skills List (optional) -->
                  <div v-if="item.skills && item.skills.length">
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: 'PortfolioGrid',
+    name: 'ExperienceGrid',
     data() {
         return {
             items: [
@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
 /* Center the container and stack cards vertically */
-.portfolio-section {
+.experience-section {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center each card */
