@@ -67,6 +67,7 @@
     /* Formatting the Main Nav Buttons */
     .navButton{
         flex: 1;
+        cursor: default;
     }
     .navButtonText{
         font-size: 1.12rem;

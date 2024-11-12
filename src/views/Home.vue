@@ -6,8 +6,9 @@
             </div>
             <div id="topRightSide">
                 <h1>Kyle Wilson</h1>
-                <h3>4th Year Computer Science Student at Seattle Pacific University</h3>
-                <h3>Software Engineering Intern | Aspiring Software Engineer</h3>
+                <h2>4th Year Student at Seattle Pacific University</h2>
+                <h3>Bachelor of Science in Computer Science, Computer Engineering Minor</h3>
+                <h3>Graduating Spring 2025 | Aspiring Software Engineer</h3>
             </div>
         </div>
         <div id="mainHomeContent">
