@@ -4,13 +4,15 @@
         <section class="projects-section">
             <div v-for="(item, index) in items" :key="index" class="card-item">
                 <div v-if="item.coverImage">
-                    <div class="card-title-left">
-                        <img :src="requireImage(item.coverImage)" alt="Project Image" id="Cover Image">
-                    </div>
-                    <div class="card-title-right">
-                        <h3 v-if="item.title">{{ item.title }}</h3>
-                        <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
-                        <p v-if="item.projectType">{{ item.projectType }}</p>
+                    <div class="card-title-container">
+                        <div class="card-title-left">
+                            <img :src="requireImage(item.coverImage)" alt="Project Image" id="Cover Image">
+                        </div>
+                        <div class="card-title-right">
+                            <h3 v-if="item.title">{{ item.title }}</h3>
+                            <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
+                            <p v-if="item.projectType">{{ item.projectType }}</p>
+                        </div>
                     </div>
                     <p v-if="item.description">{{ item.description }}</p>
                 </div>
@@ -42,25 +44,29 @@ export default {
         return {
             items: [
                 {
-                    title: 'Example Project',
-                    timeperiod: 'Example TimeFrame',
-                    description: 'Sample Description',
-                    skills: [
-                        'Skill 1',
-                        'Skill 2',
-                        'Skill 3',
-                        'Skill 4',
-                    ]
-                },
-                {
                     title: 'Project InvenStory System Proposal & Specification',
-                    coverImage: '../assets/images/projects/ProjectInvenstory.jpeg'
+                    coverImage: '../assets/images/projects/ProjectInvenstory.jpeg',
+                    timeperiod: 'Spring Quarter 2024',
+                    projectType: 'In Class Longterm Project',
+                    description: 'Within a Systems Design Course, I spend ten weeks writing approximately 75 pages of technical writing about a hypothetical piece of Software. The application that I wrote about was a custom inventory styled app that allows for one to document a hobby collection of various goods. It followed a standard set of Project Initiation Request, System Proposal, and System Specification type documents, which each described various aspects of its theoretical specifications. Given the amount of writing, as well as high level thinking about the project, that had to be done, I found myself growing immensely in my ability to think through various aspects of this software, and accurately document my ideas. This project ultimately assisted greatly in my ability to think through planning other projects, as well as formatting various pieces of documentation that I wrote during my Summer Internship (see experiences page).',
+                    skills: [
+                        'Technical Writing',
+                        'Software Development Planning',
+                        'UML Documentation',
+                        'Time Management'
+                    ]
                 },
                 {
                     title: 'Go Lexical & Syntax Parser'
                 },
                 {
-                    title: 'This Portfolio'
+                    title: 'This Portfolio',
+                    skills: [
+                        'GitHub Pages',
+                        'Vue.js',
+                        'Vite',
+                        'Documentation'
+                    ]
                 }
             ]
         }
@@ -101,6 +107,33 @@ export default {
   transition: transform 0.3s ease; /* Add transition for hover effect */
 }
 
+/* Title container to use Flexbox for side-by-side layout */
+.card-title-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 1rem; /* Add some space between the left and right sections */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for left section (image) */
+.card-title-left {
+  flex: 0 1 400px; /* Allow image to be flexible but constrained */
+  max-width: 100%; /* Ensure image does not grow too large */
+}
+
+.card-title-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for right section (text) */
+.card-title-right {
+  flex: 2; /* Allow the right section to take up remaining space */
+  text-align: center;
+}
+
 /* Skills list styling */
 .skills-list {
   list-style: none;
@@ -123,6 +156,18 @@ export default {
 }
 
 /* Responsive adjustment */
+@media (max-width: 750px) {
+  .card-title-container {
+    flex-direction: column; /* Stack left and right sections vertically */
+    align-items: center; /* Center items when stacked */
+  }
+
+  .card-title-left {
+    max-width: 100%; /* Allow image to be full width on smaller screens */
+    margin-bottom: 1rem; /* Add space below the image */
+  }
+}
+
 @media (max-width: 768px) {
   .card-item {
     padding: 1.5rem; /* Adjust padding on smaller screens */
