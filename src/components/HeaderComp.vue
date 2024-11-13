@@ -46,6 +46,7 @@
         justify-content: space-between;
         align-items: center;
         background-color:gray;
+        z-index: 10;
     }
     #leftSide{
         flex: 1;
