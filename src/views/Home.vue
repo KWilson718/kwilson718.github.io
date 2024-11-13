@@ -13,8 +13,8 @@
         </div>
         <div id="mainHomeContent">
             <h2>Welcome to my Portfolio!</h2>
-            <p>Here is a collection of my work, listing my experience, and other general information about my adventure into starting a career in Software Development</p>
-            <p>The majority of this website is still under development, but will be added very soon</p>
+            <p>Here is a collection of my work, listing my experience, and other general information about my adventure into starting a career in Software Development.</p>
+            <p>More information regarding projects will continue to be posted with higher frequency now that I'm in my Senior Year of College.</p>
         </div>
     </div>
 </template>
