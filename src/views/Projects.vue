@@ -10,6 +10,7 @@
                         </div>
                         <div class="card-title-right">
                             <h3 v-if="item.title">{{ item.title }}</h3>
+                            <h6 v-if="item.subtitle">{{ item.subtitle }}</h6>
                             <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
                             <p v-if="item.projectType">{{ item.projectType }}</p>
                         </div>
@@ -18,6 +19,7 @@
                 </div>
                 <div v-else>
                     <h3 v-if="item.title">{{ item.title }}</h3>
+                    <h6 v-if="item.subtitle">{{ item.subtitle }}</h6>
                     <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
                     <p v-if="item.projectType">{{ item.projectType }}</p>
                     <p v-if="item.description">{{ item.description }}</p>
@@ -43,6 +45,19 @@ export default {
     data() {
         return {
             items: [
+                {
+                    title: 'SEEN - Software Engineer',
+                    subtitle: 'Scrum Buildmeister',
+                    coverImage: '/images/projects/SeenLogo.png',
+                    experienceType: 'Year Long Class Experience',
+                    description: 'Experienced the Software Development Lifecycle through a year long Software Engineering Class. This is a currently ongoing project aiming to create a Sign Language Interpretation App which uses Machine Learning to translate video format American Sign Language into a text based response. Currently, I am the team Buildmeister, aiming to assist with setting up the Dev-Ops experience for the team. The project is still in the planning phase, however there is already an immense amount of understanding gained from what has been done so far.',
+                    skills: [
+                      'Project Planning',
+                      'Agile SCRUM',
+                      'UML'
+                    ]
+
+                },
                 {
                     title: 'Project InvenStory System Proposal & Specification',
                     coverImage: '/images/projects/ProjectInvenstory.jpeg',
@@ -130,7 +145,7 @@ export default {
 
 /* Style for left section (image) */
 .card-title-left {
-  flex: 0 1 400px; /* Allow image to be flexible but constrained */
+  flex: 0 1 250px; /* Allow image to be flexible but constrained */
   max-width: 100%; /* Ensure image does not grow too large */
 }
 
