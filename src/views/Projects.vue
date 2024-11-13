@@ -45,7 +45,7 @@ export default {
             items: [
                 {
                     title: 'Project InvenStory System Proposal & Specification',
-                    coverImage: '../assets/images/projects/ProjectInvenstory.jpeg',
+                    coverImage: '/images/projects/ProjectInvenstory.jpeg',
                     timeperiod: 'Spring Quarter 2024',
                     projectType: 'In Class Longterm Project',
                     description: 'Within a Systems Design Course, I spend ten weeks writing approximately 75 pages of technical writing about a hypothetical piece of Software. The application that I wrote about was a custom inventory styled app that allows for one to document a hobby collection of various goods. It followed a standard set of Project Initiation Request, System Proposal, and System Specification type documents, which each described various aspects of its theoretical specifications. Given the amount of writing, as well as high level thinking about the project, that had to be done, I found myself growing immensely in my ability to think through various aspects of this software, and accurately document my ideas. This project ultimately assisted greatly in my ability to think through planning other projects, as well as formatting various pieces of documentation that I wrote during my Summer Internship (see experiences page).',
