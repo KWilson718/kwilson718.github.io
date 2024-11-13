@@ -10,7 +10,7 @@
                         </div>
                         <div class="card-title-right">
                             <h3 v-if="item.title">{{ item.title }}</h3>
-                            <h6 v-if="item.subtitle">{{ item.subtitle }}</h6>
+                            <h5 v-if="item.subtitle">{{ item.subtitle }}</h5>
                             <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
                             <p v-if="item.experienceType">{{ item.experienceType }}</p>
                         </div>
