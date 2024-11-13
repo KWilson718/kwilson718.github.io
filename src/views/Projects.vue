@@ -50,6 +50,7 @@ export default {
                     subtitle: 'Scrum Buildmeister',
                     coverImage: '/images/projects/SeenLogo.png',
                     experienceType: 'Year Long Class Experience',
+                    timeperiod: 'Fall 2024 - Spring 2025',
                     description: 'Experienced the Software Development Lifecycle through a year long Software Engineering Class. This is a currently ongoing project aiming to create a Sign Language Interpretation App which uses Machine Learning to translate video format American Sign Language into a text based response. Currently, I am the team Buildmeister, aiming to assist with setting up the Dev-Ops experience for the team. The project is still in the planning phase, however there is already an immense amount of understanding gained from what has been done so far.',
                     skills: [
                       'Project Planning',
