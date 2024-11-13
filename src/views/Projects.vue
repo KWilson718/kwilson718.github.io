@@ -57,10 +57,22 @@ export default {
                     ]
                 },
                 {
-                    title: 'Go Lexical & Syntax Parser'
+                    title: 'Go Lexical & Syntax Parser',
+                    timeperiod: 'Fall Quarter 2024',
+                    projectType: 'In Class Project',
+                    description: 'In order to practice learning a new programming language while working on a project, my Concepts in Programming course assigned a project in Go. The project was to write a simple parser to simmulate the Lexical & Syntactical Analysis of a compiler, with no instruction on how Go works as a language. The main difficulty was learning how to write software to enforce a custom set of Grammar & to make sure that it would correctly output Lexical & Syntactical errors.Learning the language of Go was quite interesting, as its garbage collection led to a fun experience workign with dynamically allocated memory. As an exta effort, the functionality of writing out a parse tree was implemented, to show the structure of the grammar from the beginning statement, all the way to the terminals at the ends of the tree.',
+                    skills: [
+                        'Go Language',
+                        'Lexical Analysis',
+                        'Syntax Analysis',
+                        'Adapting to a new Programming Language'
+                    ]
                 },
                 {
                     title: 'This Portfolio',
+                    timeperiod: 'Summer 2024 - Present',
+                    projectType: 'Personal Project',
+                    description: 'This Portfolio\'s goal is to practice skills gained in Vue.js while additionally documenting progress into a career in Software Engineering. It is developed using Vue + Vite, and is hosted using GitHub Pages. Throughout the project, a lot has been learned about how Vue works with taking in dynamic data to output a website in a way that is far easier to interact with than just pure Javascrip & HTML + CSS. Additionally, for various Upper-Division Computer Science Classes, this Portfolio will be used to show progress in displaying work to meet the standards of the portfolio requirement of the Engineering & Computer Science department at Seattle Pacific University. By working to both make this porfolio my own, and to fit a rubric, I have found myself being able to work much more efficiently to display set data in a way that is more expressive of my interests.',
                     skills: [
                         'GitHub Pages',
                         'Vue.js',
