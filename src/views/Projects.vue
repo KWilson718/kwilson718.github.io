@@ -13,6 +13,7 @@
                             <h5 v-if="item.subtitle">{{ item.subtitle }}</h5>
                             <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
                             <p v-if="item.projectType">{{ item.projectType }}</p>
+                            <a v-if="item.externalLink" :href="item.externalLink.link">{{ item.externalLink.text }}</a>
                         </div>
                     </div>
                     <p v-if="item.description">{{ item.description }}</p>
@@ -22,6 +23,7 @@
                     <h6 v-if="item.subtitle">{{ item.subtitle }}</h6>
                     <p v-if="item.timeperiod">{{ item.timeperiod }}</p>
                     <p v-if="item.projectType">{{ item.projectType }}</p>
+                    <a v-if="item.externalLink" :href="item.externalLink.link">{{ item.externalLink.text }}</a>
                     <p v-if="item.description">{{ item.description }}</p>
                 </div>
 
@@ -46,18 +48,38 @@ export default {
         return {
             items: [
                 {
-                    title: 'SEEN - Software Engineer',
-                    subtitle: 'Scrum Buildmeister',
+                    title: 'SEEN - A Sign Language Translation Application',
+                    subtitle: 'Scrum Buildmeister | Backend Developer',
                     coverImage: '/images/projects/SeenLogo.png',
                     projectType: 'Year Long Class Experience',
                     timeperiod: 'Fall 2024 - Spring 2025',
                     description: 'Experienced the Software Development Lifecycle through a year long Software Engineering Class. This is a currently ongoing project aiming to create a Sign Language Interpretation App which uses Machine Learning to translate video format American Sign Language into a text based response. Currently, I am the team Buildmeister, aiming to assist with setting up the Dev-Ops experience for the team. The project is still in the planning phase, however there is already an immense amount of understanding gained from what has been done so far.',
+                    externalLink: {
+                      link: 'https://github.com/Project-Seen',
+                      text: 'Link to GitHub Organization'
+                    },
                     skills: [
                       'Project Planning',
                       'Agile SCRUM',
                       'UML'
                     ]
 
+                },
+                {
+                  title: 'Five Crowns in the Command Line',
+                  subtitle: 'A Game Developed in Rust',
+                  projectType: 'Term & Exploratory Project',
+                  timeperiod: 'Last 1/3rd of Fall Quarter 2024',
+                  description: 'Learned the basics of the language Rust by developing a command line board game interpretation of the card game Five Crowns. This project was assigned as a final product of the class, Concepts in Programming, however the complexity of the game was by choice. Key topics learned were the Rust language, planning out and executing a game in the command line on a time crunch, and clearly documenting both code and a ReadMe file.',
+                  externalLink: {
+                    link: 'https://github.com/KWilson718/kwilson718.github.io',
+                    text: 'Link to GitHub Repo'
+                  },
+                  skills: [
+                    'Rust Language',
+                    'Game Design',
+                    'Markdown Documentation',
+                  ]
                 },
                 {
                     title: 'Project InvenStory System Proposal & Specification',
