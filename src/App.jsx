@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { ThemeProvider, CssBaseline, Button, Box } from "@mui/material";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider, CssBaseline, Box } from "@mui/material";
 import getTheme from "./utils/theme";
+
 import Navbar from "./components/navbar";
+
+import PageNotFound from "./pages/PageNotFound";
 
 export default function App() {
     // Logic for Setting up the correct theme
@@ -17,10 +21,14 @@ export default function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Navbar mode={mode} setMode={setMode} />
-            <Box sx={{ p: 2, minHeight: "100vh", bgcolor: "background.default", color: "text.primary" }}>
-                {"Hello World"}
-            </Box>
+            <Router>
+                <Navbar mode={mode} setMode={setMode} />
+                <Box sx={{ p: 2, bgcolor: "background.default", color: "text.primary" }}>
+                    <Routes>
+                        <Route path="*" element={<PageNotFound/>} />
+                    </Routes>
+                </Box>
+            </Router>
         </ThemeProvider>
     )
 }
