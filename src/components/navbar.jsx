@@ -5,8 +5,11 @@ import {useState} from "react";
 
 import MenuIcon from '@mui/icons-material/Menu';
 
+import NavDrawer from "./navDrawer";
+
 const Navbar = ({ mode, setMode }) => {
   const [selectedTab, setSelectedTab] = useState(0);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   
   const navigate = useNavigate();
 
@@ -16,35 +19,39 @@ const Navbar = ({ mode, setMode }) => {
     navigate(routes[newValue]);
   };
 
+  const toggleDrawer = (newState) => {
+    setDrawerOpen(newState);
+  }
+
   return (
-    <AppBar position="sticky">
-      <Toolbar>
-        <Typography variant="h1" sx={{ flexGrow: 1 }}>
-          Kyle's Portfolio
-        </Typography>
-        <Switch
-          checked={mode === "dark"}
-          onChange={() => setMode((prev) => (prev === "light" ? "dark" : "light"))}
-        />
-        <Tabs
-          value={selectedTab}
-          onChange={handleTabChange}
-        >
-          <Tab label="Home" />
-          <Tab label="Projects" />
-          <Tab label="Experience" />
-          <Tab label="Misc" />
-        </Tabs>
-        <IconButton
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ ml: 2 }}
-        >
-          <MenuIcon sx={{ fontSize: 40 }} />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+    <>
+      <AppBar position="sticky">
+        <Toolbar>
+          <Typography variant="h1" sx={{ flexGrow: 1 }}>
+            Kyle's Portfolio
+          </Typography>
+          <Tabs
+            value={selectedTab}
+            onChange={handleTabChange}
+          >
+            <Tab label="About" />
+            <Tab label="Projects" />
+            <Tab label="Experience" />
+            <Tab label="Misc" />
+          </Tabs>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ ml: 2 }}
+            onClick={() => toggleDrawer(true)}
+          >
+            <MenuIcon sx={{ fontSize: 40 }} />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+      <NavDrawer isOpen={drawerOpen} closeDrawer={() => toggleDrawer(false)} mode={mode} setMode={(newVal) => setMode(newVal)} />
+    </>
   );
 };
 
