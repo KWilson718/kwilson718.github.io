@@ -8,7 +8,7 @@ const getTheme = (mode) => {
           main: "#1976d2",
         },
         secondary: {
-          main: "#ff4081",
+          main: "#ffffff",
         },
         background: {
           default: mode === "dark" ? "#121212" : "#f5f5f5",
@@ -35,6 +35,27 @@ const getTheme = (mode) => {
             root: {
               textTransform: "none",
               borderRadius: "8px",
+              color: `${mode === "dark" ? "#bbbbbb" : "#333333"} !important`,
+            },
+          },
+        },
+        MuiTabs: {
+          styleOverrides: {
+            root: {
+              "& .MuiTabs-indicator": {
+                backgroundColor: mode === "dark" ? "#1976d2" : "#eeeeee", // Make the indicator visible
+              },
+            },
+          },
+        },
+        MuiTab: {
+          styleOverrides: {
+            root: {
+              color: `${mode === "dark" ? "#bbbbbb" : "#333333"} !important`,
+              "&.Mui-selected": {
+                color: "#ffffff !important",
+                fontWeight: 700,
+              },
             },
           },
         },
