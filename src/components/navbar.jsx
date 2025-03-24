@@ -1,22 +1,33 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Switch, IconButton, Tab, Tabs } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import {useState} from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import {useState, useEffect} from "react";
 
 import MenuIcon from '@mui/icons-material/Menu';
 
 import NavDrawer from "./navDrawer";
 
 const Navbar = ({ mode, setMode }) => {
-  const [selectedTab, setSelectedTab] = useState(0);
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  
+  const location = useLocation();
   const navigate = useNavigate();
+
+  const tabRoutes = ["/", "/projects", "/experience", "/misc"];
+
+  const currentTabIndex = tabRoutes.indexOf(location.pathname);
+  const [selectedTab, setSelectedTab] = useState(
+    currentTabIndex !== -1 ? currentTabIndex : 0
+  );
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    if (currentTabIndex !== -1) {
+      setSelectedTab(currentTabIndex);
+    }
+  }, [currentTabIndex]);
 
   const handleTabChange = (_, newValue) => {
     setSelectedTab(newValue);
-    const routes = ["/", "/projects", "/experience", "/misc"];
-    navigate(routes[newValue]);
+    navigate(tabRoutes[newValue]); // Navigate to the selected tab's path
   };
 
   const toggleDrawer = (newState) => {
