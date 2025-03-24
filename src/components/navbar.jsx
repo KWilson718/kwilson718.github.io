@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Switch, IconButton, Tab, Tabs } from "@mui/material";
+import { AppBar, Toolbar, Typography, Switch, IconButton, Tab, Tabs, Box } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useState, useEffect} from "react";
 
@@ -38,9 +38,14 @@ const Navbar = ({ mode, setMode }) => {
     <>
       <AppBar position="sticky">
         <Toolbar>
-          <Typography variant="h1" sx={{ flexGrow: 1 }}>
-            Kyle's Portfolio
-          </Typography>
+          <Box sx={{display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center" }}>
+            <Typography variant="h1">
+              Kyle Wilson
+            </Typography>
+            <Typography variant="subTitle1" sx={{paddingLeft: 5}} >
+              Aspiring Software Engineer
+            </Typography>
+          </Box>
           <Tabs
             value={selectedTab}
             onChange={handleTabChange}
