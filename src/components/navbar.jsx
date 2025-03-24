@@ -1,11 +1,20 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Switch, IconButton, Tab, Tabs } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import {useState} from "react";
 
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = ({ mode, setMode }) => {
   const [selectedTab, setSelectedTab] = useState(0);
+  
+  const navigate = useNavigate();
+
+  const handleTabChange = (_, newValue) => {
+    setSelectedTab(newValue);
+    const routes = ["/", "/projects", "/experience", "/misc"];
+    navigate(routes[newValue]);
+  };
 
   return (
     <AppBar position="sticky">
@@ -19,7 +28,7 @@ const Navbar = ({ mode, setMode }) => {
         />
         <Tabs
           value={selectedTab}
-          onChange={(_, newValue) => setSelectedTab(newValue)}
+          onChange={handleTabChange}
         >
           <Tab label="Home" />
           <Tab label="Projects" />
