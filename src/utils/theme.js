@@ -25,8 +25,17 @@ const getTheme = (mode) => {
           fontSize: "2rem",
           fontWeight: 700,
         },
+        title1: {
+          fontSize: "3rem",
+          fontWeight: 700,
+        },
+        subTitle1: {
+          fontSize: "1.5rem",
+          color: mode === "dark" ? "#cccccc" : "#eeeeee",
+        },
         body1: {
           fontSize: "1rem",
+          fontWeight: 500,
         },
       },
       components: {
@@ -43,7 +52,7 @@ const getTheme = (mode) => {
           styleOverrides: {
             root: {
               "& .MuiTabs-indicator": {
-                backgroundColor: mode === "dark" ? "#1976d2" : "#eeeeee", // Make the indicator visible
+                backgroundColor: mode === "dark" ? "#dddddd" : "#eeeeee", // Make the indicator visible
               },
             },
           },
@@ -51,7 +60,7 @@ const getTheme = (mode) => {
         MuiTab: {
           styleOverrides: {
             root: {
-              color: `${mode === "dark" ? "#bbbbbb" : "#333333"} !important`,
+              color: `${mode === "dark" ? "#bbbbbb" : "#dddddd"} !important`,
               "&.Mui-selected": {
                 color: "#ffffff !important",
                 fontWeight: 700,
