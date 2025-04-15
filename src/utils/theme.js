@@ -25,6 +25,10 @@ const getTheme = (mode) => {
           fontSize: "2rem",
           fontWeight: 700,
         },
+        title1: {
+          fontSize: "3rem",
+          fontWeight: 700,
+        },
         subTitle1: {
           fontSize: "1.5rem",
           color: mode === "dark" ? "#cccccc" : "#eeeeee",
