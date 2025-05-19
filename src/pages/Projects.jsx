@@ -13,6 +13,7 @@ export default function Projects () {
                         <ProjectCard
                             projectName={project.name}
                             projectDesc={project.description}
+                            projectSkills={project.skills}
                         />
                     </Grid>
                 ))}

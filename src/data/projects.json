@@ -1,7 +1,7 @@
 [
-  { "name": "TestName", "description": "This is a sample project about X." },
-  { "name": "TestName2", "description": "Another project that does Y." },
-  { "name": "TestName3", "description": "This one is a React app that does Z." },
-  { "name": "TestName4", "description": "A helpful tool built with Node.js." },
-  { "name": "TestName5", "description": "An experimental UI concept." }
+  { "name": "TestName", "description": "This is a sample project about X.", "skills": ["skill", "skill2", "skill3", "skill4"] },
+  { "name": "TestName2", "description": "Another project that does Y.", "skills": ["skill", "skill2", "skill3", "skill4"] },
+  { "name": "TestName3", "description": "This one is a React app that does Z.", "skills": ["skill", "skill2", "skill3", "skill4"] },
+  { "name": "TestName4", "description": "A helpful tool built with Node.js.", "skills": ["skill", "skill2", "skill3", "skill4"] },
+  { "name": "TestName5", "description": "An experimental UI concept.", "skills": ["skill", "skill2", "skill3", "skill4"] }
 ]
