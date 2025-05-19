@@ -5,6 +5,9 @@ import {useState, useEffect} from "react";
 
 import MenuIcon from '@mui/icons-material/Menu';
 
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+
 import NavDrawer from "./navDrawer";
 
 const Navbar = ({ mode, setMode }) => {
@@ -17,7 +20,6 @@ const Navbar = ({ mode, setMode }) => {
   const [selectedTab, setSelectedTab] = useState(
     currentTabIndex !== -1 ? currentTabIndex : 0
   );
-  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     if (currentTabIndex !== -1) {
@@ -29,10 +31,6 @@ const Navbar = ({ mode, setMode }) => {
     setSelectedTab(newValue);
     navigate(tabRoutes[newValue]); // Navigate to the selected tab's path
   };
-
-  const toggleDrawer = (newState) => {
-    setDrawerOpen(newState);
-  }
 
   return (
     <>
@@ -56,17 +54,14 @@ const Navbar = ({ mode, setMode }) => {
             <Tab label="Misc" />
           </Tabs>
           <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 2 }}
-            onClick={() => toggleDrawer(true)}
+            onClick={() => {
+            mode === "dark" ? setMode("light") : setMode("dark");
+            }}
           >
-            <MenuIcon sx={{ fontSize: 40 }} />
+            {mode === "dark" ? <DarkModeIcon /> : <DarkModeOutlinedIcon />}
           </IconButton>
         </Toolbar>
       </AppBar>
-      <NavDrawer isOpen={drawerOpen} closeDrawer={() => toggleDrawer(false)} mode={mode} setMode={(newVal) => setMode(newVal)} />
     </>
   );
 };
