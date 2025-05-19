@@ -12,6 +12,7 @@ export default function Projects () {
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
                         <ProjectCard
                             projectName={project.name}
+                            projectDur={project.duration}
                             projectDesc={project.description}
                             projectSkills={project.skills}
                         />
