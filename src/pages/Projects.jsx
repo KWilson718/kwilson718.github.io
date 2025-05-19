@@ -2,13 +2,7 @@ import {Box, Grid} from "@mui/material"
 
 import ProjectCard from "../components/projectCard";
 
-const projects = [
-    { name: "TestName", description: "This is a sample project about X." },
-    { name: "TestName2", description: "Another project that does Y." },
-    { name: "TestName3", description: "This one is a React app that does Z." },
-    { name: "TestName4", description: "A helpful tool built with Node.js." },
-    { name: "TestName5", description: "An experimental UI concept." },
-  ];
+import projects from "../data/projects.json";
 
 export default function Projects () {
     return (
