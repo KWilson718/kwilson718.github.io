@@ -1,6 +1,6 @@
 import {Box, Grid} from "@mui/material"
 
-import ProjectCard from "../components/projectCard";
+import ItemCard from "../components/itemCard";
 
 import projects from "../data/projects.json";
 
@@ -10,11 +10,11 @@ export default function Projects () {
             <Grid container spacing={2}>
                 {projects.map((project, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-                        <ProjectCard
-                            projectName={project.name}
-                            projectDur={project.duration}
-                            projectDesc={project.description}
-                            projectSkills={project.skills}
+                        <ItemCard
+                            itemName={project.name}
+                            itemDur={project.duration}
+                            itemDesc={project.description}
+                            itemSkills={project.skills}
                         />
                     </Grid>
                 ))}
