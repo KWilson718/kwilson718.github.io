@@ -37,6 +37,14 @@ const getTheme = (mode) => {
           fontSize: "1rem",
           fontWeight: 500,
         },
+        body2: {
+          fontSize: "0.9rem",
+          fontWeight: 100,
+        },
+        cardTitle1: {
+          fontSize: "1.25rem",
+          fontWeight: 600,
+        }
       },
       components: {
         MuiButton: {

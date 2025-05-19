@@ -1,0 +1,36 @@
+[
+  { 
+    "name": "TestName", 
+    "duration": "September 2025",
+    "description": "This is a sample project about X.", 
+    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  },
+  { 
+    "name": "TestName2",
+    "duration": "Summer 2025",
+    "location": "Remote",
+    "description": "Another project that does Y.", 
+    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  },
+  { 
+    "name": "TestName3", 
+    "duration": "Summer 2025",
+    "location": "Greater Seattle Area",
+    "description": "This one is a React app that does Z.", 
+    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  },
+  { 
+    "name": "TestName4", 
+    "duration": "Summer 2025",
+    "location": "Greater Seattle Area",
+    "description": "A helpful tool built with Node.js.", 
+    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  },
+  { 
+    "name": "TestName5", 
+    "duration": "Summer 2025",
+    "location": "Greater Seattle Area",
+    "description": "An experimental UI concept.", 
+    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  }
+]
