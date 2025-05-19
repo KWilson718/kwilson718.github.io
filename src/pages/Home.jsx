@@ -2,6 +2,8 @@ import {Avatar, Box, Typography, Divider} from "@mui/material";
 
 import profilePic from "../assets/photos/profile.png";
 
+import aboutEntries from "../data/about.json"
+
 export default function Home () {
     return (
         <Box
@@ -58,9 +60,9 @@ export default function Home () {
                 <Typography variant={"h1"}>
                     Who Am I?
                 </Typography>
-                <Divider />
+                <Divider sx={{margin: "0.5rem"}} />
                 <Typography variant={"p"}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nisi doloribus minima voluptas quae vero eaque illo in, repudiandae eligendi illum dolores aut, esse aspernatur omnis labore, porro mollitia ducimus repellat quisquam provident molestias. Magnam perspiciatis vel sint ullam suscipit. Deleniti suscipit enim, magni accusamus tempore id voluptas adipisci delectus alias rerum quis exercitationem quidem officiis. Quidem sed porro esse veritatis magnam voluptatum nihil temporibus tempore voluptatibus asperiores similique reprehenderit, dolorum numquam eaque omnis incidunt earum laboriosam maxime. Eligendi sint voluptate asperiores, cupiditate optio quo, odio dolor incidunt quaerat eum, possimus accusantium iusto at architecto aliquam ad in ab nesciunt!
+                    {aboutEntries.about}
                 </Typography>
             </Box>
             <Box
@@ -76,9 +78,9 @@ export default function Home () {
                 <Typography variant={"h1"}>
                     What Have I Done?
                 </Typography>
-                <Divider />
+                <Divider sx={{margin: "0.5rem"}} />
                 <Typography variant={"p"}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nisi doloribus minima voluptas quae vero eaque illo in, repudiandae eligendi illum dolores aut, esse aspernatur omnis labore, porro mollitia ducimus repellat quisquam provident molestias. Magnam perspiciatis vel sint ullam suscipit. Deleniti suscipit enim, magni accusamus tempore id voluptas adipisci delectus alias rerum quis exercitationem quidem officiis. Quidem sed porro esse veritatis magnam voluptatum nihil temporibus tempore voluptatibus asperiores similique reprehenderit, dolorum numquam eaque omnis incidunt earum laboriosam maxime. Eligendi sint voluptate asperiores, cupiditate optio quo, odio dolor incidunt quaerat eum, possimus accusantium iusto at architecto aliquam ad in ab nesciunt!
+                    {aboutEntries.past}
                 </Typography>
             </Box>
             <Box
@@ -94,9 +96,9 @@ export default function Home () {
                 <Typography variant={"h1"}>
                     What Are My Future Goals?
                 </Typography>
-                <Divider />
+                <Divider sx={{margin: "0.5rem"}} />
                 <Typography variant={"p"}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nisi doloribus minima voluptas quae vero eaque illo in, repudiandae eligendi illum dolores aut, esse aspernatur omnis labore, porro mollitia ducimus repellat quisquam provident molestias. Magnam perspiciatis vel sint ullam suscipit. Deleniti suscipit enim, magni accusamus tempore id voluptas adipisci delectus alias rerum quis exercitationem quidem officiis. Quidem sed porro esse veritatis magnam voluptatum nihil temporibus tempore voluptatibus asperiores similique reprehenderit, dolorum numquam eaque omnis incidunt earum laboriosam maxime. Eligendi sint voluptate asperiores, cupiditate optio quo, odio dolor incidunt quaerat eum, possimus accusantium iusto at architecto aliquam ad in ab nesciunt!
+                    {aboutEntries.future}
                 </Typography>
             </Box>
         </Box>
