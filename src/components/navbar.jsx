@@ -8,8 +8,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
-import NavDrawer from "./navDrawer";
-
 const Navbar = ({ mode, setMode }) => {
   const location = useLocation();
   const navigate = useNavigate();
