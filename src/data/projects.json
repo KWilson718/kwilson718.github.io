@@ -1,5 +1,13 @@
 [
   {
+    "name": "SEEN - A Sign Language Translation App",
+    "duration": "Fall 2024 - Present"
+  },
+  {
+    "name": "Current Portfolio",
+    "duration": "Spring 2025 - Present"
+  },
+  {
     "name": "Miniature Collection Manager",
     "type": "Personal Project",
     "duration": "Winter 2025",
@@ -14,5 +22,17 @@
     "description": "Built out a simplified version of the card game \"Five Crowns\" in Rust, using Ascii art as a visual. Lots of work around data structures and other concepts in programming went into making a system which ran quickly and stored information in an extremely useful format.",
     "skills": ["Rust", "Data Structures", "Algorithms"],
     "source": "https://github.com/KWilson718/rust-five-crowns"
+  },
+  {
+    "name": "Project InvenStory - System Proposal & System Specification",
+    "duration": "Fall 2024"
+  },
+  {
+    "name": "Golang Lexical & Syntax Parser",
+    "duration": "Fall 2024"
+  },
+  {
+    "name": "Previous Portfolio",
+    "duration": "Summer 2024 - Fall 2024"
   }
 ]
