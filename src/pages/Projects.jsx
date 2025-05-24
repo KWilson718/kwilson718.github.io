@@ -12,9 +12,11 @@ export default function Projects () {
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
                         <ItemCard
                             itemName={project.name}
+                            itemType={project.type}
                             itemDur={project.duration}
                             itemDesc={project.description}
                             itemSkills={project.skills}
+                            itemSource={project.source}
                         />
                     </Grid>
                 ))}

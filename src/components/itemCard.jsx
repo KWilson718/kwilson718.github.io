@@ -1,11 +1,13 @@
-import { Card, CardContent, Typography, Chip, Box } from "@mui/material";
+import { Card, CardContent, Typography, Chip, Box, Link } from "@mui/material";
 
 export default function ItemCard({
   itemName = "",
+  itemType = "",
   itemDur = "",
   itemLoc = "",
   itemDesc = "",
   itemSkills = [],
+  itemSource = "",
 }) {
   return (
     <Card sx={{ minWidth: "15vw", maxWidth: "50vw", borderRadius: "0.5rem" }}>
@@ -15,6 +17,9 @@ export default function ItemCard({
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemDur}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
+          {itemType}
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemLoc}
@@ -29,6 +34,8 @@ export default function ItemCard({
             <Chip key={idx} label={skill} variant="outlined" sx={{ margin: "0.3rem" }} />
           ))}
         </Box>
+
+        {itemSource && <Link href={itemSource} color="inherit">View More</Link>}
       </CardContent>
     </Card>
   );

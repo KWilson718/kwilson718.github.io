@@ -1,32 +1,18 @@
 [
-  { 
-    "name": "TestName", 
-    "duration": "September 2025",
-    "description": "This is a sample project about X.", 
-    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  {
+    "name": "Miniature Collection Manager",
+    "type": "Personal Project",
+    "duration": "Winter 2025",
+    "description": "Designed a CRUD application to gain further practice with database interaction, and data display. Designed to store formatted data about a miniature wargaming collection, Miniature Collection Manager allowed for the rapid itemization of a large inventory of game pieces for the wargaming hobby. Past the core concept, I was able to gain immense familiarity with how React works, as well as experience with building an application that used the component library MUI.",
+    "skills": ["React", "Node.js", "Javascript", "SQL", "CRUD App Design"],
+    "source": "https://github.com/KWilson718/MiniatureCollectionManager/"
   },
-  { 
-    "name": "TestName2",
-    "duration": "Summer 2025",
-    "description": "Another project that does Y.", 
-    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-  },
-  { 
-    "name": "TestName3", 
-    "duration": "Summer 2025",
-    "description": "This one is a React app that does Z.", 
-    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-  },
-  { 
-    "name": "TestName4", 
-    "duration": "Summer 2025",
-    "description": "A helpful tool built with Node.js.", 
-    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-  },
-  { 
-    "name": "TestName5", 
-    "duration": "Summer 2025",
-    "description": "An experimental UI concept.", 
-    "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+  {
+    "name": "Five Crowns In The Command Line",
+    "type": "Class Project - Concepts in Programming",
+    "duration": "Fall 2024",
+    "description": "Built out a simplified version of the card game \"Five Crowns\" in Rust, using Ascii art as a visual. Lots of work around data structures and other concepts in programming went into making a system which ran quickly and stored information in an extremely useful format.",
+    "skills": ["Rust", "Data Structures", "Algorithms"],
+    "source": "https://github.com/KWilson718/rust-five-crowns"
   }
 ]
