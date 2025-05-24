@@ -17,10 +17,11 @@ export default function Misc () {
                             <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
                             <ItemCard
                                 itemName={item.name}
+                                itemType={item.type}
                                 itemDur={item.duration}
-                                itemLoc={item.location}
                                 itemDesc={item.description}
                                 itemSkills={item.skills}
+                                itemSource={item.source}
                             />
                             </Grid>
                         ))}
