@@ -12,28 +12,28 @@ export default function ItemCard({
   return (
     <Card sx={{ minWidth: "15vw", maxWidth: "50vw", borderRadius: "0.5rem" }}>
       <CardContent sx={{ textAlign: "center" }}>
-        <Typography variant="cardTitle1" sx={{ margin: "0.3rem" }}>
+        {itemName && <Typography variant="cardTitle1" sx={{ margin: "0.3rem" }}>
           {itemName}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
+        </Typography>}
+        {itemDur && <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemDur}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
+        </Typography>}
+        {itemType && <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemType}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
+        </Typography>}
+        {itemLoc && <Typography variant="body2" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemLoc}
-        </Typography>
-        <Typography variant="body1" color="text.secondary" sx={{ margin: "0.3rem" }}>
+        </Typography>}
+        {itemDesc && <Typography variant="body1" color="text.secondary" sx={{ margin: "0.3rem" }}>
           {itemDesc}
-        </Typography>
+        </Typography>}
 
         {/* Center the Chip group */}
-        <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "0.5rem" }}>
+        {(itemSkills.length > 0) && <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "0.5rem" }}>
           {itemSkills.map((skill, idx) => (
             <Chip key={idx} label={skill} variant="outlined" sx={{ margin: "0.3rem" }} />
           ))}
-        </Box>
+        </Box>}
 
         {itemSource && <Link href={itemSource} color="inherit">View More</Link>}
       </CardContent>
