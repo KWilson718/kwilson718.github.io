@@ -6,9 +6,11 @@ import getTheme from "./utils/theme";
 import Navbar from "./components/navbar";
 
 import PageNotFound from "./pages/PageNotFound";
+
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
+import Resume from "./pages/Resume";
 import Misc from "./pages/Misc";
 
 export default function App() {
@@ -32,6 +34,7 @@ export default function App() {
                         <Route path="/" element={<Home/>} />
                         <Route path="/projects" element={<Projects/>} />
                         <Route path="/experience" element={<Experience/>} />
+                        <Route path="/resume" element={<Resume/>}/>
                         <Route path="/misc" element={<Misc/>} />
                         <Route path="*" element={<PageNotFound/>} />
                     </Routes>

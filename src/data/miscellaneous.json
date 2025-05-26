@@ -1,145 +1,29 @@
 [
     {
-        "title": "Example Category",
-        "description": "Description of Category",
+        "title": "Micro Controllers & Electronics",
+        "description": "A collection of micro controller and electronics based projects done for a Computer Engineering Minor & Hobby",
         "items": [
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+            {
+                "name": "Medication Dispenser",
+                "duration": "Spring 2025",
+                "type": "Class Project",
+                "description": "In order to learn more about the Raspberry Pi Pico, as well as project planning with various electronics modules, I was able to build a medication dispenser with a team of four others in a Microcontrollers class. The project uses a Pico as the main brains of the system, a servo for dispensing medications, a buzzer, light, and display to output info about an onboard timer, and a few other modules for security and input. This project brought about a deeper understanding of working with individuals with different fields of study, and planning accordingly to harness the most of each members' strengths!"
             }
         ]
     },
     {
-        "title": "Example Category",
-        "description": "Description of Category",
+        "title": "Metalworking & Fabrication",
+        "description": "Focused fabrication using nonferrous metals to design various artistic sculptures and jewelry",
         "items": [
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+            {
+                "name": "Hollow Constructed Ring",
+                "description": "A Brass & Silver Accented Ring using Hollow Construction for the ring body and bezel setting to set a cabochon of Lapis Lazuli",
+                "skills": ["Hollow Construction", "Bezel Setting", "Advanced Soldering"]
             },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            }
-        ]
-    },
-    {
-        "title": "Example Category",
-        "description": "Description of Category",
-        "items": [
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
-            },
-            { 
-                "name": "TestName", 
-                "duration": "September 2025",
-                "description": "This is a sample project about X.", 
-                "skills": ["skill", "skill 2", "skill 3", "skill 4"] 
+            {
+                "name": "Die Formed Locket Pendant",
+                "description": "A Copper Locket constructed from a Hydraulic Pressed Die Form of a Shield. Etched in Ferric Chloride, and finished with Liver of Sulfur & Buffing, this piece contains a single metal color, yet contrast through shapes and finishing.",
+                "skills": ["Hinge Construction", "Ferric Chloride Etching", "Advanced Soldering", "Liver of Sulfur"]
             }
         ]
     }

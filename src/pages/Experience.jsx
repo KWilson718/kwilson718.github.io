@@ -12,10 +12,11 @@ export default function Experience () {
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
                         <ItemCard
                             itemName={experience.name}
+                            itemType={experience.type}
                             itemDur={experience.duration}
-                            itemLoc={experience.location}
                             itemDesc={experience.description}
                             itemSkills={experience.skills}
+                            itemSource={experience.source}
                         />
                     </Grid>
                 ))}

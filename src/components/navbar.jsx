@@ -12,7 +12,7 @@ const Navbar = ({ mode, setMode }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const tabRoutes = ["/", "/projects", "/experience", "/misc"];
+  const tabRoutes = ["/", "/projects", "/experience", "/resume", "/misc"];
 
   const currentTabIndex = tabRoutes.indexOf(location.pathname);
   const [selectedTab, setSelectedTab] = useState(
@@ -49,6 +49,7 @@ const Navbar = ({ mode, setMode }) => {
             <Tab label="About" />
             <Tab label="Projects" />
             <Tab label="Experience" />
+            <Tab label="Resume"/>
             <Tab label="Misc" />
           </Tabs>
           <IconButton
