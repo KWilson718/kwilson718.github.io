@@ -1,11 +1,18 @@
 [
   {
     "name": "SEEN - A Sign Language Translation App",
-    "duration": "Fall 2024 - Present"
+    "type": "Senior Capstone Project",
+    "duration": "Fall 2024 - Present",
+    "description": "As a year long Senior Software project, four others and myself worked to create an app using React Native with the aim of building translation functionality between American Sign Language and English. By building a translation pipeline for both ways, the app, SEEN, aims to make a more human connection between those who rely on ASL as a primary language, and those who do not have experience in ASL. I was able to work on building out a majority of the backend which hosted two AI models that other team members created. By working to seamlessly link between message requests made from the front end, and the models themselves, I was able to grow immensely in understanding of dataflow across these translation pathways. As an additional note, I was able to gain knowledge of accounts systems, and secure the project's API with usage of AWS Cognito and authorization tokens. Having come into the project with minimal AWS knowledge, I was additionally able to practice project based learning, as I researched and learned about each AWS resource while integrating it into the project. Overall, this project has taught immense amounts about the entire lifecycle of Software, as well as team based developent while practicing the Agile Scrum methodology.",
+    "skills": ["Amazon Web Services", "Lambda", "DynamoDB", "Step Functions", "AWS S3", "Software Development Lifecycle"]
   },
   {
     "name": "Current Portfolio",
-    "duration": "Spring 2025 - Present"
+    "type": "Portfolio",
+    "duration": "Spring 2025 - Present",
+    "description": "In order to further understand the interaction of react, and its component based structure, I decided to rebuild my personal portfolio to practice data display. This was additionally an opportunity to further practice visual design to make each component appealing and clean looking. By using MUI Components, I have been able to further gain experience with a large component library, and further customization when needed.",
+    "skills": ["React", "MUI", "Visual Design", "GitHub Pages"],
+    "source": "https://github.com/KWilson718/kwilson718.github.io"
   },
   {
     "name": "Miniature Collection Manager",
@@ -20,19 +27,29 @@
     "type": "Class Project - Concepts in Programming",
     "duration": "Fall 2024",
     "description": "Built out a simplified version of the card game \"Five Crowns\" in Rust, using Ascii art as a visual. Lots of work around data structures and other concepts in programming went into making a system which ran quickly and stored information in an extremely useful format.",
-    "skills": ["Rust", "Data Structures", "Algorithms"],
+    "skills": ["Rust", "Data Structures", "Algorithms", "Markdown Documentation"],
     "source": "https://github.com/KWilson718/rust-five-crowns"
   },
   {
     "name": "Project InvenStory - System Proposal & System Specification",
-    "duration": "Fall 2024"
+    "type": "Class Project - Systems Design",
+    "duration": "Fall 2024",
+    "description": "Within a Systems Design Course, I spend ten weeks writing approximately 75 pages of technical writing about a hypothetical piece of Software. The application that I wrote about was a custom inventory styled app that allows for one to document a hobby collection of various goods. It followed a standard set of Project Initiation Request, System Proposal, and System Specification type documents, which each described various aspects of its theoretical specifications. Given the amount of writing, as well as high level thinking about the project, that had to be done, I found myself growing immensely in my ability to think through various aspects of this software, and accurately document my ideas. This project ultimately assisted greatly in my ability to think through planning other projects, as well as formatting various pieces of documentation that I wrote during my Summer Internship (see experiences page).",
+    "skills": ["Technical Writing", "Software Development Planning:", "UML Documentation", "Time Management"]
   },
   {
     "name": "Golang Lexical & Syntax Parser",
-    "duration": "Fall 2024"
+    "type": "Class Project - Concepts in Programming",
+    "duration": "Fall 2024",
+    "description": "In order to practice learning a new programming language while working on a project, my Concepts in Programming course assigned a project in Go. The project was to write a simple parser to simmulate the Lexical & Syntactical Analysis of a compiler, with no instruction on how Go works as a language. The main difficulty was learning how to write software to enforce a custom set of Grammar & to make sure that it would correctly output Lexical & Syntactical errors. The additional learning piece of this project was picking up a language & futher concepts on the fly, which is key to success in long term success in technology. Learning the language of Go was quite interesting, as its garbage collection led to a fun experience workign with dynamically allocated memory. As an exta effort, the functionality of writing out a parse tree was implemented, to show the structure of the grammar from the beginning statement, all the way to the terminals at the ends of the tree.",
+    "skills": ["Go Lang", "Lexical Analysis", "Syntax Analysis", "Learning New Syntax"]
   },
   {
     "name": "Previous Portfolio",
-    "duration": "Summer 2024 - Fall 2024"
+    "type": "Portfolio",
+    "duration": "Summer 2024 - Fall 2024",
+    "description": "After being introduced to the framework Vue, and the component library Vuetify, I felt that I could greatly benefit from building out a personal portfolio to better gain expereince using it. Through the process of working with data transfer and routing calls, I was able to gain a much larger understanding of how to use a framework to best display information in a portfolio manner. This portfolio is a bit rough around the edges, however I have learned quite a bit about data display since then.",
+    "skills": ["Vue", "Vuetify", "GitHub Pages"],
+    "source": "https://github.com/KWilson718/prev-vue-portfolio"
   }
 ]

@@ -35,7 +35,7 @@ export default function ItemCard({
           ))}
         </Box>}
 
-        {itemSource && <Link href={itemSource} color="inherit">View More</Link>}
+        {itemSource && <Link href={itemSource} color="inherit">View Project</Link>}
       </CardContent>
     </Card>
   );
